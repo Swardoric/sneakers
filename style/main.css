@@ -1,0 +1,33 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section {
+    display: flex;
+}
+
+#section1 {
+    height: 100vh;
+    width: 100hv;
+    background: radial-gradient(50% 50% at 50% 50%, #D8E4EF 0%, #399DF5 100%);
+}
+
+#section2 {
+    height: 100vh;
+    width: 100hv;
+    background: radial-gradient(50% 50% at 50% 50%, #E1E9F0 0%, #097042 100%);
+}
+
+
+#section3 {
+    height: 100vh;
+    width: 100hv;
+    background: radial-gradient(50% 50% at 50% 50%, #D8E4EF 0%, #BE3F42 100%);
+}
