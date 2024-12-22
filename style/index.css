@@ -5,6 +5,11 @@
     src: url('../font/Graffiti.ttf');
 }
 
+:root{
+    --text: #0F0E17;
+    --background: #FFFFFE;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -13,8 +18,10 @@
 }
 
 body{
-    background-color: #FFFFFE;
+    background-color: var(--background);
+    color: var(--text);
     font-family: 'Poppins';
+    transition: background-color 0.2s ease, color 0.3s ease;
 }
 
 nav{
@@ -23,11 +30,31 @@ nav{
     padding: 2% 3%;
 }
 
+.switch {
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 50px; /* Arrondir les bords pour un effet moderne */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour ajouter de la profondeur */
+    transition: all 0.3s ease;
+}
+
+.switch:hover{
+    background-color: #45a049; /* Changer la couleur au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
+    transform: translateY(-2px); /* Effet de survol léger */
+}
+
+.switch:focus {
+    outline: none; /* Supprimer la bordure de focus */
+}
+
 nav .logo{
-    color: #0F0E17;
+    color: var(--text);
     font-weight: 800px;
-    font-size: 20px;
-    padding: 8px;
+    font-size: 25px;
+    padding: 5px;
     transition: 0.2s ease-in-out;
 }
 
@@ -39,13 +66,18 @@ nav .logo{
 }
 
 .nav-links ul li a{
-    color: #0F0E17;
+    color: var(--text);
     font-size: 15px;
     transition: 0.2s ease-in-out;
 }
 
+.nav-links ul li .switch{
+    color: var(--text);
+}
+
 .nav-links ul li:hover{
     scale: 1.1;
+    transform: translateY(-2px);
 }
 
 nav .logo:hover {
@@ -88,12 +120,12 @@ nav .logo:hover {
 }
 
 .sneaker-list {
-    position: absolute;
-    top: -11%;
-    left: -60%;
-    font-weight: bold;
+    position: fixed;
+    top: -60px;
+    left: -400px;
+    font-weight: 800;
     color: transparent;
-    -webkit-text-stroke: 1px rgba(167, 169, 190, 0.5);
+    -webkit-text-stroke: 0.5px rgba(167, 169, 190, 0.5);
     text-transform: uppercase;
     white-space: nowrap;
     z-index: -1;
@@ -103,10 +135,10 @@ nav .logo:hover {
   }
   .sneaker-item {
     display: block;
-    font-size: 15vw;
+    font-size: 8em;
     margin: 0;
     padding: 0;
-    line-height: 1.2;
+    line-height: 1.0;
   }
   .sneaker-item:nth-child(even) {
     text-align: left;

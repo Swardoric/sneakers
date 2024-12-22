@@ -16,6 +16,7 @@
                     <li><a href="#">Stan Smith</a></li>
                     <li><a href="#">Jordan 1</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><div class="switch">thème</div></li>
                 </ul>
             </div>
         </nav>
@@ -28,5 +29,29 @@
             <div class="sneaker-item">SNEAKERS</div>
         </div>
     </main>
+
+    <script>
+        const switchThemeBtn = document.querySelector('.switch')
+        let toggleTheme = 0;
+    
+        switchThemeBtn.addEventListener('click', () => {
+
+            if (toggleTheme === 0){
+
+                document.documentElement.style.setProperty('--text', '#FFFFFE');
+                document.documentElement.style.setProperty('--background', '#000000');
+                toggleTheme = 1;
+
+            } else{
+
+                document.documentElement.style.setProperty('--text', '#0F0E17');
+                document.documentElement.style.setProperty('--background', '#FFFFFE');
+                toggleTheme = 0;
+
+            }
+
+
+        })
+    </script>
 </body>
 </html>
