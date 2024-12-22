@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'Graffiti';
-    src: url(/font/Graffiti.ttf);
+    src: url('../font/Graffiti.ttf');
 }
 
 *{
@@ -24,8 +24,8 @@ nav{
 }
 
 nav .logo{
-    font-family: 'Graffiti', 'Poppins';
     color: #0F0E17;
+    font-weight: 800px;
     font-size: 20px;
     padding: 8px;
     transition: 0.2s ease-in-out;
