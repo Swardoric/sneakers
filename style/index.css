@@ -18,20 +18,18 @@ nav{
     padding: 2% 3%;
 }
 
+nav .logo{
+    color: #0F0E17;
+    font-size: 20px;
+    padding: 8px;
+    transition: 0.2s ease-in-out;
+}
+
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 25px 8px 25px;
     transition: 0.2s ease-in-out;
-}
-
-.nav-links ul li:hover{
-    padding: 8px 25px 8px 22px;
-}
-
-nav .logo{
-    color: #0F0E17;
-    font-size: 15px;
 }
 
 .nav-links ul li a{
@@ -40,12 +38,18 @@ nav .logo{
     transition: 0.2s ease-in-out;
 }
 
-.nav-links ul li a:hover{
-    font-weight: 800;
+.nav-links ul li:hover{
+    scale: 1.1;
 }
 
-.logo:hover {
-    scale: 1.2;
+nav .logo:hover {
+    font-weight: bold;
+    position: relative;
+    color: transparent;
+    text-shadow: 
+        40px 0px 0 #399DF5,
+        -20px -15px 0 #BE3F42,
+        -5px 15px 0 #097042;
 }
 
 .nav-links ul li a::after{
