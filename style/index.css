@@ -86,3 +86,32 @@ nav .logo:hover {
 .nav-links ul li a:hover::after{
     width: 100%;
 }
+
+.sneaker-list {
+    position: absolute;
+    top: -11%;
+    left: -60%;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(167, 169, 190, 0.5);
+    text-transform: uppercase;
+    white-space: nowrap;
+    z-index: -1;
+    display: flex;
+    flex-direction: column;
+
+  }
+  .sneaker-item {
+    display: block;
+    font-size: 15vw;
+    margin: 0;
+    padding: 0;
+    line-height: 1.2;
+  }
+  .sneaker-item:nth-child(even) {
+    text-align: left;
+  }
+  .sneaker-item:nth-child(odd) {
+    text-align: left;
+    margin-left: 300px;
+  }
