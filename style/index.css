@@ -36,6 +36,7 @@ nav{
 
 #theme{
     width: 20px;
+    transition: transform 0.5s ease-out;
 }
 
 nav .logo{
@@ -43,7 +44,7 @@ nav .logo{
     font-weight: 800px;
     font-size: 25px;
     padding: 5px;
-    transition: 0.2s ease-in-out;
+    transition: 0.2s ease-out;
 }
 
 .nav-links ul li{
@@ -74,8 +75,8 @@ nav .logo:hover {
     color: transparent;
     text-shadow: 
         40px 0px 0 #399DF5,
-        -20px -15px 0 #BE3F42,
-        -5px 15px 0 #097042;
+        -20px -20px 0 #BE3F42,
+        -5px 20px 0 #097042;
 }
 
 .nav-links ul li a::after{
