@@ -32,22 +32,10 @@ nav{
 
 .switch {
     cursor: pointer;
-    border: none;
-    background-color: #4CAF50;
-    color: white;
-    border-radius: 50px; /* Arrondir les bords pour un effet moderne */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour ajouter de la profondeur */
-    transition: all 0.3s ease;
 }
 
-.switch:hover{
-    background-color: #45a049; /* Changer la couleur au survol */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus marquée au survol */
-    transform: translateY(-2px); /* Effet de survol léger */
-}
-
-.switch:focus {
-    outline: none; /* Supprimer la bordure de focus */
+#theme{
+    width: 20px;
 }
 
 nav .logo{
