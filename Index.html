@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakers</title>
     <link rel="stylesheet" href="style/index.css">
 </head>
+
 <body>
     <header>
         <nav>
@@ -15,7 +17,9 @@
                     <li><a href="#">Air Max</a></li>
                     <li><a href="#">Stan Smith</a></li>
                     <li><a href="#">Jordan 1</a></li>
-                    <li><div class="switch"><img src="image/logo/lune.png" id="theme"></div></li>
+                    <li>
+                        <div class="switch"><img src="image/logo/lune.png" id="theme"></div>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -36,31 +40,34 @@
 
     <script>
         const switchThemeBtn = document.querySelector('.switch')
-        let toggleTheme = 0;
+        let toggleTheme = parseInt(localStorage.getItem('toggleTheme')) || 0;
         var icon = document.getElementById('theme')
-    
-        switchThemeBtn.addEventListener('click', () => {
 
-            if (toggleTheme === 0){
+        function setTheme() {
+
+            if (toggleTheme === 1) {
 
                 document.documentElement.style.setProperty('--text', '#FFFFFE');
                 document.documentElement.style.setProperty('--background', '#000000');
-                toggleTheme = 1;
                 icon.src = "image/logo/soleil.png";
                 theme.style.transform = 'rotate(360deg)';
 
-            } else{
-
+            } else {
                 document.documentElement.style.setProperty('--text', '#0F0E17');
                 document.documentElement.style.setProperty('--background', '#FFFFFE');
-                toggleTheme = 0;
                 icon.src = "image/logo/lune.png";
                 theme.style.transform = 'rotate(0deg)';
 
             }
+        }
 
-
-        })
+        setTheme();
+        switchThemeBtn.addEventListener('click', () => {
+            toggleTheme = toggleTheme == 1 ? 0 : 1;
+            localStorage.setItem('toggleTheme', toggleTheme);
+            setTheme();
+        });
     </script>
 </body>
+
 </html>
