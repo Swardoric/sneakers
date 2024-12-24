@@ -48,13 +48,15 @@
             if (toggleTheme === 1) {
 
                 document.documentElement.style.setProperty('--text', '#FFFFFE');
-                document.documentElement.style.setProperty('--background', '#000000');
+                document.documentElement.style.setProperty('--background', '#121212');
+                document.documentElement.style.setProperty('--btext', '#53545F')
                 icon.src = "image/logo/soleil.png";
                 theme.style.transform = 'rotate(360deg)';
 
             } else {
                 document.documentElement.style.setProperty('--text', '#0F0E17');
-                document.documentElement.style.setProperty('--background', '#FFFFFE');
+                document.documentElement.style.setProperty('--background', '#F8F9FA');
+                document.documentElement.style.setProperty('--btext', '#D7D8E2')
                 icon.src = "image/logo/lune.png";
                 theme.style.transform = 'rotate(0deg)';
 
