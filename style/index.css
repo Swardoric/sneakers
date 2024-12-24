@@ -110,11 +110,11 @@ nav .logo:hover {
 
 .sneaker-list {
     position: fixed;
-    top: -60px;
-    left: -400px;
+    top: -130px;
+    left: -750px;
     font-weight: 800;
     color: transparent;
-    -webkit-text-stroke: 0.5px rgba(167, 169, 190, 0.5);
+    -webkit-text-stroke: 1px #d7d8e2;
     text-transform: uppercase;
     white-space: nowrap;
     z-index: -1;
@@ -124,7 +124,7 @@ nav .logo:hover {
 
 .sneaker-item {
     display: block;
-    font-size: 8em;
+    font-size: 12em;
     margin: 0;
     padding: 0;
     line-height: 1.0;
@@ -136,7 +136,7 @@ nav .logo:hover {
 
 .sneaker-item:nth-child(odd) {
     text-align: left;
-    margin-left: 300px;
+    margin-left: 450px;
 }
 
 .container-sneaker {
@@ -144,7 +144,7 @@ nav .logo:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 500px; /* Largeur personnalisable */
+    width: 700px; /* Largeur personnalisable */
     height: 300px; /* Hauteur personnalisable */
     background-color: #f0f0f0; /* Couleur de fond du conteneur */
     border: 1px solid #ccc;
@@ -163,7 +163,7 @@ nav .logo:hover {
     height: 348px;
     background-color: #399DF5;
     top: 0;
-    right: 0;
+    right: 100px;
     transform: translate(50%, -50%);
 }
 
@@ -171,7 +171,7 @@ nav .logo:hover {
     width: 222px;
     height: 189px;
     background-color: #097042;
-    top: 50%;
+    top: 70%;
     left: 0;
     transform: translate(-50%, -50%);
 }
