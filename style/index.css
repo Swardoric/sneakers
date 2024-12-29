@@ -218,11 +218,12 @@ nav .logo:hover {
 }
 
 footer{
-    position: relative;
+    position: absolute;
     width: 100%;
-    height: 200px;
+    height: 100%;
     overflow: hidden;
-    margin-top: auto;
+    bottom: 0;
+    background-color: #097042;
 }
 
 .ovale {
