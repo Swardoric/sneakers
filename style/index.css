@@ -142,7 +142,7 @@ nav .logo:hover {
 }
 
 .sneaker-list {
-    position: fixed;
+    position: absolute;
     top: -130px;
     right: 58%;
     font-weight: 800;
@@ -177,9 +177,8 @@ nav .logo:hover {
     top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 700px; /* Largeur personnalisable */
-    height: 500px; /* Hauteur personnalisable */
-    background-color: #f0f0f0; /* Couleur de fond du conteneur */
+    width: 900px;
+    height: 500px;
     border: 1px solid #ccc;
     display: flex;
     justify-content: center;
