@@ -26,9 +26,26 @@ body{
 }
 
 nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 2% 3%;
+    z-index: 1000;
+    transition: 0.2s ease;
+}
+
+nav:hover{
+    background-color: var(--background);
+}
+
+.hidden {
+	top: -80px;
+	transition: all ease 0.5s;
+  	transition-delay: 0.2s;
+
 }
 
 .switch {
@@ -142,7 +159,7 @@ nav .logo:hover {
 
 .container-sneaker {
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 700px; /* Largeur personnalisable */
