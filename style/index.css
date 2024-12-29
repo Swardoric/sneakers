@@ -178,7 +178,7 @@ nav .logo:hover {
     left: 50%;
     transform: translate(-50%, -50%);
     width: 700px; /* Largeur personnalisable */
-    height: 300px; /* Hauteur personnalisable */
+    height: 500px; /* Hauteur personnalisable */
     background-color: #f0f0f0; /* Couleur de fond du conteneur */
     border: 1px solid #ccc;
     display: flex;
@@ -192,8 +192,8 @@ nav .logo:hover {
 }
 
 .bleu {
-    width: 409px;
-    height: 348px;
+    width: 695.3px;
+    height: 591.6px;
     background-color: #399DF5;
     top: 0;
     right: 100px;
@@ -201,8 +201,8 @@ nav .logo:hover {
 }
 
 .vert {
-    width: 222px;
-    height: 189px;
+    width: 377px;
+    height: 321px;
     background-color: #097042;
     top: 70%;
     left: 0;
@@ -210,8 +210,8 @@ nav .logo:hover {
 }
 
 .rouge {
-    width: 179px;
-    height: 153px;
+    width: 304px;
+    height: 260px;
     background-color: #BE3F42;
     bottom: 0;
     right: 0;
