@@ -221,3 +221,50 @@ nav .logo:hover {
     transform: translate(50%, 50%);
 }
 
+footer{
+    width: 900px;
+    height: 900px;
+    background-color: var(--btext);
+}
+
+.formulaire{
+    background-color: var(--background);
+    padding: 30px;
+    border-radius: 10px;
+    width: 300px;
+    align-items: center;
+}
+
+.formulaire h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+input, textarea{
+    font-family: 'Poppins';
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--background);
+    color: var(--text);
+    border: none;
+    border-bottom: 2px solid var(--text);
+}
+
+textarea {
+    resize: none;
+    height: 80px;
+}
+
+button {
+    background-color: #399DF5;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
