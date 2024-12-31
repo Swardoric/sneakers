@@ -50,6 +50,20 @@
                     <button type="submit">SOUMETTRE</button>
                 </form>
             </div>
+            <div class="navigation">
+                <h2>NAVIGATION</h2>
+                <p>Accueil</p>
+                <p>Air max 1</p>
+                <p>Air Jordan</p>
+                <p>Stan Smith</p>
+            </div>
+            <div class="social">
+                <h2>SOCIAL</h2>
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>Twitter</p>
+                <p>Youtube</p>
+            </div>
         </div>
     </footer>
     
@@ -61,7 +75,7 @@
         function setTheme() {
 
             if (toggleTheme === 1) {
-
+                document.documentElement.style.setProperty('--navbar', '#121212CC');
                 document.documentElement.style.setProperty('--text', '#FFFFFE');
                 document.documentElement.style.setProperty('--background', '#121212');
                 document.documentElement.style.setProperty('--btext', '#53545F');
@@ -70,6 +84,7 @@
                 theme.style.transform = 'rotate(360deg)';
 
             } else {
+                document.documentElement.style.setProperty('--navbar', '#F8F9FACC');
                 document.documentElement.style.setProperty('--text', '#0F0E17');
                 document.documentElement.style.setProperty('--background', '#F8F9FA');
                 document.documentElement.style.setProperty('--btext', '#D7D8E2');
