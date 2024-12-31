@@ -180,8 +180,10 @@ nav .logo:hover {
     margin-top: 80vh;
     margin-left: 50%;
     transform: translate(-50%, -50%);
-    width: 900px;
-    height: 500px;
+    width: 90%;
+    aspect-ratio: 2 / 1;
+    max-width: 1000px;
+    max-height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
