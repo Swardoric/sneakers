@@ -43,11 +43,11 @@
         <div class="ovale">
             <div class="formulaire">
                 <h2>S'incrire à la Newsletter</h2>
-                <form action="#" method="post">
+                <form action="#" method="get">
                     <input type="text" name="nom" placeholder="Entrez votre nom" required>
                     <input type="email" name="email" placeholder="Entrez une email valide" required>
-                    <textarea name="avis" placeholder="Laisser votre avis" required></textarea>
-                    <button type="submit">SOUMETTRE</button>
+                    <textarea name="avis" placeholder="Laisser votre avis"></textarea>
+                    <button type="button" onclick="envoyerEmail()">SOUMETTRE</button>
                 </form>
             </div>
             <div class="navigation">
@@ -115,6 +115,15 @@
     			}
     			lastScrollValue = top;
 			});
+
+        function envoyerEmail() {
+            const nom = document.getElementById('nom').value;
+            const avis = document.getElementById('avis').value;
+
+            const mailto = 'mailto:lucphoengo@gmail.com?subject=Avis%20Site%20Web&body=Nom:%20${encodeURIComponent(nom)}%0A%0AAvis:%20${encodeURIComponent(avis)};
+
+            window.location.href = mailto;
+        }
     </script>
 </body>
 
