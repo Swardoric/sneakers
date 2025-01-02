@@ -221,6 +221,11 @@ nav .logo:hover {
     transform: translate(50%, 50%);
 }
 
+.airmax {
+    position: static;
+    width: 1000px;
+}
+
 footer{
     width: 100%;
     height: 600px;
