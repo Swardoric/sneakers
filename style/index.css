@@ -252,16 +252,24 @@ nav .logo:hover{
 }
 
 footer{
-    width: 100%;
-    height: 500px;
-    background-color: red;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-left: auto;
+    width: 90%;
+    height: 600px;
+    overflow: hidden;
 }
 
 .ovale{
-    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250%;
     aspect-ratio: 1/0.617;
     border-radius: 50%;
-    transform: rotate(27deg);
+    transform: translate(-3%, 12%) rotate(34deg);
     background-color: var(--btext);
 }
 
@@ -270,10 +278,10 @@ footer{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 20px;
     max-width: 1200px;
-    margin-right: 5%;
-    transform: rotate(-27deg);
+    margin-top: 230px;
+    margin-left: 50px;
+    transform: rotate(-34deg);
     background-color: green;
 }
 
@@ -281,11 +289,13 @@ footer{
     background-color: var(--background);
     padding: 30px;
     border-radius: 25px;
-    width: 600px;
+    width: 700px;
+    height: ;
     align-items: center;
 }
 
 .formulaire h2{
+    text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
 }
@@ -304,19 +314,31 @@ input, textarea{
 textarea{
     resize: none;
     height: 80px;
+    transition: 0.2s ease;
+}
+
+textarea:hover {
+    border-bottom: 2px inset #399DF5C6;
 }
 
 button{
+    width: 70%;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
     background-color: #399DF5;
-    color: white;
-    padding: 10px 20px;
+    color: var(--background);
+    padding: 15px;
     border: none;
     border-radius: 100px;
     cursor: pointer;
+    margin: 0 auto;
+    transition: 0.5s ease;
 }
 
 button:hover{
-    background-color: #0056b3;
+    width: 40%;
 }
 
 .information{
