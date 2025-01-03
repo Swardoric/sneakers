@@ -195,8 +195,8 @@ nav .logo:hover{
 }
 
 .bleu{
-    width: 695.3px;
-    height: 591.6px;
+    width: 60%;
+    aspect-ratio: 1/0.85;
     background-color: #399DF5;
     top: 0;
     right: 100px;
@@ -204,8 +204,8 @@ nav .logo:hover{
 }
 
 .vert{
-    width: 377px;
-    height: 321px;
+    width: 40%;
+    aspect-ratio: 1/0.85;
     background-color: #097042;
     top: 70%;
     left: 0;
@@ -213,8 +213,8 @@ nav .logo:hover{
 }
 
 .rouge{
-    width: 304px;
-    height: 260px;
+    width: 30%;
+    aspect-ratio: 1/0.85;
     background-color: #BE3F42;
     bottom: 0;
     right: 0;
