@@ -290,7 +290,6 @@ footer{
     padding: 30px;
     border-radius: 25px;
     width: 700px;
-    height: ;
     align-items: center;
 }
 
@@ -317,7 +316,7 @@ textarea{
     transition: 0.2s ease;
 }
 
-textarea:hover {
+input:hover, textarea:hover {
     border-bottom: 2px inset #399DF5C6;
 }
 
