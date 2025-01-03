@@ -282,7 +282,6 @@ footer{
     margin-top: 230px;
     margin-left: 50px;
     transform: rotate(-34deg);
-    background-color: green;
 }
 
 .formulaire{
@@ -346,5 +345,4 @@ button:hover{
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-color: blue;
 }
