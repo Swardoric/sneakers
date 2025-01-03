@@ -253,25 +253,35 @@ nav .logo:hover{
 
 footer{
     width: 100%;
-    height: 600px;
-    background-color: var(--btext);
+    height: 500px;
+    background-color: red;
 }
 
 .ovale{
+    width: 70%;
+    aspect-ratio: 1/0.617;
+    border-radius: 50%;
+    transform: rotate(27deg);
+    background-color: var(--btext);
+}
+
+.allfooter{
     display: flex;
     justify-content: space-around;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     padding: 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-right: 5%;
+    transform: rotate(-27deg);
+    background-color: green;
 }
 
 .formulaire{
     background-color: var(--background);
     padding: 30px;
-    border-radius: 10px;
-    width: 300px;
+    border-radius: 25px;
+    width: 600px;
     align-items: center;
 }
 
@@ -307,4 +317,13 @@ button{
 
 button:hover{
     background-color: #0056b3;
+}
+
+.information{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    background-color: blue;
 }
