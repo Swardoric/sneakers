@@ -230,15 +230,22 @@ nav .logo:hover{
 }
 
 .cercle h2{
+    color: var(--background);
     position: absolute;
     font-family: 'MortalWave';
     font-size: 4vw;
     opacity: 0;
     transition: 0.5s ease;
     z-index: 3;
-}
-
-.cercle.vert h2{
+    text-shadow: 
+        2px 2px 0px var(--text),
+        -2px 2px 0px var(--text),
+        2px -2px 0px var(--text),
+        -2px -2px 0px var(--text),
+        2px 0px 0px var(--text),
+        -2px 0px 0px var(--text), 
+        0px 2px 0px var(--text),
+        0px -2px 0px var(--text);
 }
 
 .airmax{
