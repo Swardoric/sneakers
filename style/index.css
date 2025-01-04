@@ -10,7 +10,7 @@
     --text: #0F0E17;
     --background: #F8F9FA;
     --btext: #D7D8E2;
-    --footer: #F8F4F4;
+    --footer: #EAEAF3;
 }
 
 *{
@@ -61,7 +61,7 @@ nav:hover{
 }
 
 .hidden{
-	top: -80px;
+	top: -130px;
 	transition: all ease 0.5s;
   	transition-delay: 0.2s;
 }
@@ -270,7 +270,7 @@ footer{
     aspect-ratio: 1/0.617;
     border-radius: 50%;
     transform: translate(-3%, 12%) rotate(34deg);
-    background-color: var(--btext);
+    background-color: var(--footer);
 }
 
 .allfooter{
@@ -279,9 +279,35 @@ footer{
     align-items: center;
     flex-wrap: wrap;
     max-width: 1200px;
-    margin-top: 230px;
+    margin-top: 210px;
     margin-left: 50px;
     transform: rotate(-34deg);
+}
+
+.allfooter .information p{
+    text-align: left;
+}
+
+.allfooter p{
+    margin: 15px 0;
+    text-align: center;
+}
+
+.allfooter .information h2 {
+    padding-bottom: 10px;
+}
+
+.information{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.information p{
+    margin: -5px 0;
+    padding: 0;
 }
 
 .formulaire{
@@ -320,7 +346,8 @@ input:hover, textarea:hover {
 }
 
 button{
-    width: 70%;
+    width: 60%;
+    height: 60px;
     font-family: 'Poppins';
     font-weight: bold;
     font-size: 15px;
@@ -337,12 +364,4 @@ button{
 
 button:hover{
     width: 40%;
-}
-
-.information{
-    display: flex;
-    width: 300px;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap: wrap;
 }
