@@ -77,7 +77,6 @@ nav:hover{
 
 nav .logo{
     color: var(--text);
-    font-weight: 800px;
     font-size: 25px;
     padding: 5px;
     transition: 0.2s ease-out;
