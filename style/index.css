@@ -295,10 +295,11 @@ footer{
     display: flex;
     justify-content: flex-end;
     align-items: flex-start;
-    margin-left: auto;
+    margin-left: 10vw;
     width: 90%;
     height: 600px;
     overflow: hidden;
+    transition: 0.2s ease;
 }
 
 .ovale{
@@ -317,10 +318,13 @@ footer{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    width: 60vw;
     max-width: 1200px;
     margin-top: 210px;
     margin-left: 50px;
     transform: rotate(-34deg);
+    transition: 0.2s ease;
+    background-color: red;
 }
 
 .allfooter .information p{
@@ -338,10 +342,12 @@ footer{
 
 .information{
     display: flex;
+    font-size: calc(0.7vw + 5px);
     width: 300px;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
+    background-color: green;
 }
 
 .information p{
@@ -353,7 +359,8 @@ footer{
     background-color: var(--background);
     padding: 30px;
     border-radius: 25px;
-    width: 700px;
+    width: 40vw;
+    max-width: 700px;
     align-items: center;
 }
 
@@ -403,4 +410,61 @@ button{
 
 button:hover{
     width: 40%;
+}
+
+.formulaire-btn{
+    display: none;
+}
+
+@media (max-width: 1500px) {
+    footer{
+        width: 100%;
+        margin-left: 0;
+    }
+    
+    .ovale{
+        right: 30vw;
+        transform: translate(-10%, 15%) rotate(34deg);
+    }
+
+    footer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+    }
+
+    .formulaire {
+        display: none;
+    }
+
+    .information{
+        display: flex;
+        font-size: calc(0.7vw + 5px);
+        width: 450px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: green;
+    }
+
+    .information a {
+        display: flex; 
+        align-items: center; 
+        text-align: center;
+        font-weight: 600;
+        padding: 1.5vw 3vw;
+        margin: 10px; 
+        border-radius: 100px;
+        color: var(--background);
+        background-color: #399DF5;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .formulaire-btn:hover {
+        transform: translateY(-5px);
+        background-color: #2775C1;
+    }
 }
