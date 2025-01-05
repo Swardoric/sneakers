@@ -433,9 +433,14 @@ button:hover{
         align-items: center;
         background-color: blue;
     }
-
+    
     .formulaire {
         display: none;
+    }
+
+    .allfooter{
+        margin: auto;
+        background-color: #097042;
     }
 
     .information{
