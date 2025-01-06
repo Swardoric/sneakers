@@ -303,7 +303,6 @@ footer{
     height: 600px;
     overflow: hidden;
     transition: 0.2s ease;
-    background-color: red;
 }
 
 .allfooter{
@@ -311,13 +310,12 @@ footer{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    width: 60vw;
+    width: 65vw;
     max-width: 1200px;
     margin-top: 210px;
-    margin: auto;
+    margin: 8vw auto;
     transition: 0.2s ease;
     z-index: 2;
-    background-color: green;
 }
 
 .allfooter .information p{
@@ -421,7 +419,7 @@ button:hover{
     z-index: 1;
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1300px) {
     footer{
         width: 100%;
         margin-left: 0;
