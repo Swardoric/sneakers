@@ -480,7 +480,7 @@ button:hover{
     }
 
     footer{
-        width: 110%;
+        width: 140%;
         margin: auto;
     }
     
@@ -502,6 +502,7 @@ button:hover{
     .allfooter{
         margin: auto;
         margin-bottom: 0;
+        margin-right: 20%;
         width: 100%;
     }
 
