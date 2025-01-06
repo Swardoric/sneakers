@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakers</title>
     <link rel="stylesheet" href="style/index.css">
+    <link rel="icon" href="./image/logo/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -49,38 +50,40 @@
     </main>
 
     <footer>
-            <div class="allfooter">
-                <div class="formulaire">
-                    <h2>Donner votre avis</h2>
-                    <form action="mailto:lucphoengo@gmail.com?content-type=text/html&subject=Avis%20Site%20Web" method="post" enctype="text/plain">
-                        <input type="text" name="nom" placeholder="Entrez votre nom" required>
-                        <input type="email" name="email" placeholder="Entrez une email valide" required>
-                        <textarea name="avis" placeholder="Laisser votre avis" required></textarea>
-                        <button type="submit">SOUMETTRE</button>
-                    </form>
-                </div>
-                <div class="information">
-                    <a href="html/contact.html" class="formulaire-btn">Donner votre<br>avis</a>
-                    <div class="navigation">
-                        <h2>NAVIGATION</h2>
-                        <p>Accueil</p>
-                        <p>Air max 1</p>
-                        <p>Air Jordan</p>
-                        <p>Stan Smith</p>
-                    </div>
-                    <div class="social">
-                        <h2>SOCIAL</h2>
-                        <p>Facebook</p>
-                        <p>Instagram</p>
-                        <p>Twitter</p>
-                        <p>Youtube</p>
-                    </div>
-                </div>
-                <p class="droits">Sneakers Inc. - Ce site contient des éléments appartenant à des tiers. Tous les droits sont réservés par leurs propriétaires respectifs.<br>Termes & Conditions</p>
+        <div class="allfooter">
+            <div class="formulaire">
+                <h2>Donner votre avis</h2>
+                <form action="mailto:lucphoengo@gmail.com?content-type=text/html&subject=Avis%20Site%20Web"
+                    method="post" enctype="text/plain">
+                    <input type="text" name="nom" placeholder="Entrez votre nom" required>
+                    <input type="email" name="email" placeholder="Entrez une email valide" required>
+                    <textarea name="avis" placeholder="Laisser votre avis" required></textarea>
+                    <button type="submit">SOUMETTRE</button>
+                </form>
             </div>
-            <div class="ovale"></div>
+            <div class="information">
+                <a href="html/contact.html" class="formulaire-btn">Donner votre<br>avis</a>
+                <div class="navigation">
+                    <h2>NAVIGATION</h2>
+                    <p>Accueil</p>
+                    <p>Air max 1</p>
+                    <p>Air Jordan</p>
+                    <p>Stan Smith</p>
+                </div>
+                <div class="social">
+                    <h2>SOCIAL</h2>
+                    <p>Facebook</p>
+                    <p>Instagram</p>
+                    <p>Twitter</p>
+                    <p>Youtube</p>
+                </div>
+            </div>
+            <p class="droits">Sneakers Inc. - Ce site contient des éléments appartenant à des tiers. Tous les droits
+                sont réservés par leurs propriétaires respectifs.<br>Termes & Conditions</p>
+        </div>
+        <div class="ovale"></div>
     </footer>
-    
+
     <script>
         const switchThemeBtn = document.querySelector('.switch')
         let toggleTheme = parseInt(localStorage.getItem('toggleTheme')) || 0;
@@ -117,17 +120,17 @@
         });
 
         let header = document.querySelector("nav");
-			let lastScrollValue = 0;
+        let lastScrollValue = 0;
 
-			document.addEventListener('scroll',() => {
-				let top  = document.documentElement.scrollTop;
-    			if(lastScrollValue < top) {
-    				header.classList.add("hidden");
-    			} else {
-    			  header.classList.remove("hidden");
-    			}
-    			lastScrollValue = top;
-			});
+        document.addEventListener('scroll', () => {
+            let top = document.documentElement.scrollTop;
+            if (lastScrollValue < top) {
+                header.classList.add("hidden");
+            } else {
+                header.classList.remove("hidden");
+            }
+            lastScrollValue = top;
+        });
     </script>
 </body>
 
