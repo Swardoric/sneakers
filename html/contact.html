@@ -6,8 +6,16 @@
     <title>Contact</title>
     <link rel="stylesheet" href="style/contact.css">
 </head>
-
 <body>
-
+    <main>
+        <h2>Donner votre avis</h2>
+        <form action="mailto:lucphoengo@gmail.com?content-type=text/html&subject=Avis%20Site%20Web"
+            method="post" enctype="text/plain">
+            <input type="text" name="nom" placeholder="Entrez votre nom" required>
+            <input type="email" name="email" placeholder="Entrez une email valide" required>
+            <textarea name="avis" placeholder="Laisser votre avis" required></textarea>
+            <button type="submit">SOUMETTRE</button>
+        </form>
+    </main>
 </body>
 </html>
