@@ -463,7 +463,7 @@ button:hover{
         flex-wrap: wrap;
     }
 
-    .information a {
+    .information .formulaire-btn {
         display: flex; 
         align-items: center; 
         text-align: center;
