@@ -1,3 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+    --navbar: #F8F9FACC;
+    --text: #0F0E17;
+    --background: #F8F9FA;
+    --btext: #D7D8E2;
+    --footer: #EAEAF3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Poppins';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease, color 0.3s ease;
+}
+
+main {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: 100%;
+}
+
 .formulaire{
     background-color: var(--background);
     padding: 30px;
@@ -5,10 +45,58 @@
     width: 40vw;
     max-width: 700px;
     align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .formulaire h2{
     text-align: center;
     font-size: 24px;
     margin-bottom: 20px;
+}
+
+input, textarea{
+    font-family: 'Poppins';
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: var(--background);
+    color: var(--text);
+    border: none;
+    border-bottom: 2px solid var(--text);
+}
+
+textarea{
+    resize: none;
+    height: 80px;
+    transition: 0.2s ease;
+}
+
+input:hover, textarea:hover {
+    border-bottom: 2px inset #399DF5C6;
+}
+
+button{
+    width: 60%;
+    height: 60px;
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 15px;
+    display: block;
+    background-color: #399DF5;
+    color: var(--background);
+    padding: 15px;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    margin: 0 auto;
+    transition: 0.5s ease;
+}
+
+button:hover{
+    width: 50%;
+}
+
+.rond{
+    width: 80vw;
+    height: 80vw;
 }
