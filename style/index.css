@@ -303,17 +303,7 @@ footer{
     height: 600px;
     overflow: hidden;
     transition: 0.2s ease;
-}
-
-.ovale{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 250%;
-    aspect-ratio: 1/0.617;
-    border-radius: 50%;
-    transform: translate(-3%, 12%) rotate(34deg);
-    background-color: var(--footer);
+    background-color: red;
 }
 
 .allfooter{
@@ -324,10 +314,10 @@ footer{
     width: 60vw;
     max-width: 1200px;
     margin-top: 210px;
-    margin-left: 50px;
-    transform: rotate(-34deg);
+    margin: auto;
     transition: 0.2s ease;
-    background-color: red;
+    z-index: 2;
+    background-color: green;
 }
 
 .allfooter .information p{
@@ -419,6 +409,18 @@ button:hover{
     display: none;
 }
 
+.ovale{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 250%;
+    aspect-ratio: 1/0.617;
+    border-radius: 50%;
+    transform: translate(-3%, 12%) rotate(34deg);
+    background-color: var(--footer);
+    z-index: 1;
+}
+
 @media (max-width: 1500px) {
     footer{
         width: 100%;
@@ -434,7 +436,6 @@ button:hover{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: blue;
     }
     
     .formulaire {
@@ -443,7 +444,6 @@ button:hover{
 
     .allfooter{
         margin: auto;
-        background-color: #097042;
     }
 
     .information{
@@ -454,7 +454,6 @@ button:hover{
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        background-color: green;
     }
 
     .information a {
