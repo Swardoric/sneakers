@@ -338,7 +338,6 @@ footer{
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
-    background-color: green;
 }
 
 .information p{
@@ -442,14 +441,16 @@ button:hover{
 
     .allfooter{
         margin: auto;
+        margin-bottom: 0;
+        width: 100%;
     }
 
     .information{
         display: flex;
-        font-size: calc(0.7vw + 5px);
-        width: 450px;
-        height: 100px;
-        justify-content: center;
+        font-size: calc(1vw + 5px);
+        width: 80vw;
+        height: 20vw;
+        justify-content: space-around;
         align-items: center;
         flex-wrap: wrap;
     }
@@ -471,5 +472,10 @@ button:hover{
     .formulaire-btn:hover {
         transform: translateY(-5px);
         background-color: #2775C1;
+    }
+
+    .allfooter .droits{
+        font-size: 1.5vw;
+        margin-top: 12vw;
     }
 }
