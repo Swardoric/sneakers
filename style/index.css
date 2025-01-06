@@ -251,18 +251,21 @@ nav .logo:hover{
 .airmax{
     top: 40%;
     right: 60%;
+    pointer-events: none;
     transform: translate(50%, -50%) rotate(-27deg);
 }
 
 .stansmith{
     top: 25%;
     right: 35%;
+    pointer-events: none;
     transform: translate(50%, -50%) rotate(27deg);
 }
 
 .airjordan{
     top: 45%;
     right: 55%;
+    pointer-events: none;
     transform: translate(50%, -50%) rotate(-27deg);
 }
 
