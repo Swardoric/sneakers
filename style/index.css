@@ -187,6 +187,7 @@ nav .logo:hover{
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: 0.3s ease-out;
 }
 
 .cercle{
@@ -477,5 +478,19 @@ button:hover{
     .allfooter .droits{
         font-size: 1.5vw;
         margin-top: 12vw;
+    }
+}
+
+@media (max-width: 900px) {
+    .container-sneaker{
+        margin-top: 60vw;
+    }
+
+    .information{
+        font-size: calc(2vw + 5px);
+    }
+
+    .allfooter .droits{
+        font-size: 2vw;
     }
 }
