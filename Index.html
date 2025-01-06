@@ -23,6 +23,7 @@
                     </li>
                 </ul>
             </div>
+            <img class="menuhamburger" src="image/logo/menuhamburger.png" alt="menu hamburger">
         </nav>
     </header>
 
@@ -85,6 +86,14 @@
     </footer>
 
     <script>
+        const menuHamburger = document.querySelector(".menuhamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        });
+
+
         const switchThemeBtn = document.querySelector('.switch')
         let toggleTheme = parseInt(localStorage.getItem('toggleTheme')) || 0;
         var icon = document.getElementById('theme')
