@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     --text: #0F0E17;
     --background: #F8F9FA;
     --btext: #D7D8E2;
     --footer: #EAEAF3;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-body{
+body {
     min-height: 100vh;
     overflow-x: hidden;
     background: radial-gradient(ellipse, var(--background) 0%, #399DF5C6 40%, #399DF5 60%);
@@ -30,7 +30,7 @@ a {
     text-decoration: none;
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -42,55 +42,55 @@ nav{
     transition: 0.2s ease;
 }
 
-.switch{
+.switch {
     cursor: pointer;
 }
 
-#theme{
+#theme {
     width: 20px;
     transition: transform 0.5s ease-out;
 }
 
-nav .logo{
+nav .logo {
     color: var(--text);
     font-size: 25px;
     padding: 5px;
     transition: 0.2s ease-out;
 }
 
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 25px 8px 25px;
     transition: 0.2s ease-in-out;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
     color: var(--text);
     font-size: 15px;
     transition: 0.2s ease-in-out;
 }
 
-.nav-links ul li .switch{
+.nav-links ul li .switch {
     color: var(--text);
 }
 
-.nav-links ul li:hover{
+.nav-links ul li:hover {
     scale: 1.1;
     transform: translateY(-2px);
 }
 
-nav .logo:hover{
+nav .logo:hover {
     font-weight: bold;
     position: relative;
     color: transparent;
-    text-shadow: 
+    text-shadow:
         40px 0px 0 #399DF5,
         -20px -20px 0 #BE3F42,
         -5px 20px 0 #097042;
 }
 
-.nav-links ul li a::after{
+.nav-links ul li a::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -99,23 +99,23 @@ nav .logo:hover{
     transition: 0.5s ease-in-out;
 }
 
-.nav-links ul li:nth-child(1) a::after{
+.nav-links ul li:nth-child(1) a::after {
     background-color: #399DF5;
 }
 
-.nav-links ul li:nth-child(2) a::after{
+.nav-links ul li:nth-child(2) a::after {
     background-color: #097042;
 }
 
-.nav-links ul li:nth-child(3) a::after{
+.nav-links ul li:nth-child(3) a::after {
     background-color: #BE3F42;
 }
 
-.nav-links ul li:nth-child(4) a::after{
+.nav-links ul li:nth-child(4) a::after {
     background-color: black;
 }
 
-.nav-links ul li a:hover::after{
+.nav-links ul li a:hover::after {
     width: 100%;
 }
 
@@ -128,12 +128,94 @@ nav .logo:hover{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) rotate(-27deg);
-    width: 60vw;
+    width: 50vw;
     height: auto;
 }
 
+.nomPaire {
+    /* AirMax1 */
+
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 19vw;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    background: linear-gradient(180deg, #D2EAFF -5.59%, rgba(157, 201, 240, 0.1) 79.66%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.background-paires {
+
+    z-index: -2;
+    position: absolute;
+    bottom: 0%;
+    padding: 0%;
+    margin: 0%;
+    width: 90%;
+    height: 70%;
+
+}
+
+
+.blurred-paires {
+
+    width: 20%;
+    height: auto;
+    left: 447.7px;
+    filter: blur(13.7px);
+    position: relative;
+    transform: matrix(-0.96, 0.3, 0.3, 0.96, 0, 0);
+
+}
+
+.description h2 {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    padding-bottom: 20px;
+}
+
+.description p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #FFFFFF;
+    text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+.description {
+    position: absolute;
+    width: 40%;
+    height: 30%;
+    right: 0%;
+    top: 60%;
+    background: rgba(0, 0, 0, 0.1);
+    color: white;
+    padding: 20px;
+}
+
 @media (max-width: 1300px) {
-    nav .logo{
+    nav .logo {
         flex: 1;
         text-align: center;
     }
@@ -142,11 +224,11 @@ nav .logo:hover{
         position: absolute;
         display: block;
         top: 25px;
-		right: 25px;
+        right: 25px;
         cursor: pointer;
     }
 
-    .nav-links{
+    .nav-links {
         top: 0;
         left: 0;
         margin-top: -200%;
@@ -161,17 +243,17 @@ nav .logo:hover{
         transition: 0.3s ease-out;
     }
 
-    .nav-links.mobile-menu{
+    .nav-links.mobile-menu {
         margin-top: 0;
     }
 
-    .nav-links ul{
+    .nav-links ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .nav-links ul li{
+    .nav-links ul li {
         margin: 25px 0;
     }
 
