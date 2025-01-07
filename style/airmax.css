@@ -15,8 +15,9 @@
 }
 
 body{
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
+    min-height: 100vh;
     overflow-x: hidden;
+    background: radial-gradient(ellipse, var(--background) 0%, #399DF5C6 40%, #399DF5 60%);
     color: var(--text);
     font-family: 'Poppins';
     display: flex;
@@ -120,6 +121,16 @@ nav .logo:hover{
 
 .menuhamburger {
     display: none;
+}
+
+.paireprincipale {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Optionnel : place l'image derrière les autres contenus */
+    width: 60vw; /* Ajustez selon la taille désirée */
+    height: auto; /* Maintient le ratio d'aspect de l'image */
 }
 
 @media (max-width: 1300px) {
