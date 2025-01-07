@@ -11,7 +11,8 @@
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
     <title>Sneakers - Air Jordan 1</title>
-    <meta name="description" content="Alliant innovation et style, elle se caractérise par sa célèbre bulle d'air pour une expérience de port unique.">
+    <meta name="description"
+        content="Alliant innovation et style, elle se caractérise par sa célèbre bulle d'air pour une expérience de port unique.">
     <link rel="icon" href="../image/logo/favicon.ico" type="image/x-icon">
 </head>
 
@@ -35,47 +36,7 @@
     <main>
         <img class="paireprincipale" src="../image/paire/moyen/airjordan.png" alt="Air Max 1">
     </main>
-    <script>
-        const menuHamburger = document.querySelector(".menuhamburger")
-        const navLinks = document.querySelector(".nav-links")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        });
-        
-
-        const switchThemeBtn = document.querySelector('.switch')
-        let toggleTheme = parseInt(localStorage.getItem('toggleTheme')) || 0;
-        var icon = document.getElementById('theme')
-
-        function setTheme() {
-
-            if (toggleTheme === 1) {
-                document.documentElement.style.setProperty('--text', '#FFFFFE');
-                document.documentElement.style.setProperty('--background', '#121212');
-                document.documentElement.style.setProperty('--btext', '#53545F');
-                document.documentElement.style.setProperty('--footer', '#16161A');
-                icon.src = "../image/logo/soleil.png";
-                theme.style.transform = 'rotate(360deg)';
-
-            } else {
-                document.documentElement.style.setProperty('--text', '#0F0E17');
-                document.documentElement.style.setProperty('--background', '#F8F9FA');
-                document.documentElement.style.setProperty('--btext', '#D7D8E2');
-                document.documentElement.style.setProperty('--footer', '#EAEAF3');
-                icon.src = "../image/logo/lune.png";
-                theme.style.transform = 'rotate(0deg)';
-
-            }
-        }
-
-        setTheme();
-        switchThemeBtn.addEventListener('click', () => {
-            toggleTheme = toggleTheme == 1 ? 0 : 1;
-            localStorage.setItem('toggleTheme', toggleTheme);
-            setTheme();
-        });
-    </script>
+    <script src="../js/navbar.js"></script>
 </body>
 
 </html>

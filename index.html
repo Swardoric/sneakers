@@ -5,14 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sneakers</title>
-    <meta name="description" content="Découvrez les sneakers emblématiques : Stan Smith, Jordan One et Air Max. Explorez l'élégance intemporelle, le style streetwear et l'innovation technologique.">
-    <meta name="keywords" content="sneakers, Stan Smith, Jordan One, Air Max, chaussures de sport, streetwear, mode, basket, Nike, Adidas, classiques, légendaires, confort, design, innovation">
+    <meta name="description"
+        content="Découvrez les sneakers emblématiques : Stan Smith, Jordan One et Air Max. Explorez l'élégance intemporelle, le style streetwear et l'innovation technologique.">
+    <meta name="keywords"
+        content="sneakers, Stan Smith, Jordan One, Air Max, chaussures de sport, streetwear, mode, basket, Nike, Adidas, classiques, légendaires, confort, design, innovation">
     <!-- Définir le titre du contenu qui s'affichera lors du partage sur les réseaux sociaux -->
     <meta property="og:title" content="Découvrez les sneakers légendaires : Stan Smith, Jordan One et Air Max">
     <!-- Fournir une courte description du contenu pour attirer l'attention des utilisateurs -->
-    <meta property="og:description" content="Explorez l'élégance intemporelle, le style streetwear et l'innovation technologique.">
+    <meta property="og:description"
+        content="Explorez l'élégance intemporelle, le style streetwear et l'innovation technologique.">
     <!-- Définir la langue et la région de la page pour les réseaux sociaux -->
-     <meta property="og:locale" content="fr_FR">
+    <meta property="og:locale" content="fr_FR">
     <link rel="stylesheet" href="style/index.css">
     <link rel="icon" href="./image/logo/favicon.ico" type="image/x-icon">
 </head>
@@ -43,18 +46,24 @@
             <div class="sneaker-item">SNEAKERS</div>
         </div>
         <div class="container-sneaker">
-            <a href="html/airmax.html"><div class="cercle bleu">
-                <h2>Air Max 1</h2>
-                <img class="airmax" src="image/paire/moyen/airmax.png" alt="Air Max 1">
-            </div></a>
-            <a href="html/stansmith.html"><div class="cercle vert">
-                <h2>Stan Smith</h2>
-                <img class="stansmith" src="image/paire/moyen/stansmith.png" alt="Stan Smith">
-            </div></a>
-            <a href="html/airjordan.html"><div class="cercle rouge">
-                <h2>Air Jordan 1</h2>
-                <img class="airjordan" src="image/paire/moyen/airjordan.png" alt="Air Jordan 1">
-            </div></a>
+            <a href="html/airmax.html">
+                <div class="cercle bleu">
+                    <h2>Air Max 1</h2>
+                    <img class="airmax" src="image/paire/moyen/airmax.png" alt="Air Max 1">
+                </div>
+            </a>
+            <a href="html/stansmith.html">
+                <div class="cercle vert">
+                    <h2>Stan Smith</h2>
+                    <img class="stansmith" src="image/paire/moyen/stansmith.png" alt="Stan Smith">
+                </div>
+            </a>
+            <a href="html/airjordan.html">
+                <div class="cercle rouge">
+                    <h2>Air Jordan 1</h2>
+                    <img class="airjordan" src="image/paire/moyen/airjordan.png" alt="Air Jordan 1">
+                </div>
+            </a>
         </div>
     </main>
 
@@ -93,62 +102,7 @@
         <div class="ovale"></div>
     </footer>
 
-    <script>
-        const menuHamburger = document.querySelector(".menuhamburger")
-        const navLinks = document.querySelector(".nav-links")
- 
-        menuHamburger.addEventListener('click',()=>{
-        navLinks.classList.toggle('mobile-menu')
-        });
-
-
-        const switchThemeBtn = document.querySelector('.switch')
-        let toggleTheme = parseInt(localStorage.getItem('toggleTheme')) || 0;
-        var icon = document.getElementById('theme')
-
-        function setTheme() {
-
-            if (toggleTheme === 1) {
-                document.documentElement.style.setProperty('--navbar', '#121212CC');
-                document.documentElement.style.setProperty('--text', '#FFFFFE');
-                document.documentElement.style.setProperty('--background', '#121212');
-                document.documentElement.style.setProperty('--btext', '#53545F');
-                document.documentElement.style.setProperty('--footer', '#16161A');
-                icon.src = "image/logo/soleil.png";
-                theme.style.transform = 'rotate(360deg)';
-
-            } else {
-                document.documentElement.style.setProperty('--navbar', '#F8F9FACC');
-                document.documentElement.style.setProperty('--text', '#0F0E17');
-                document.documentElement.style.setProperty('--background', '#F8F9FA');
-                document.documentElement.style.setProperty('--btext', '#D7D8E2');
-                document.documentElement.style.setProperty('--footer', '#EAEAF3');
-                icon.src = "image/logo/lune.png";
-                theme.style.transform = 'rotate(0deg)';
-
-            }
-        }
-
-        setTheme();
-        switchThemeBtn.addEventListener('click', () => {
-            toggleTheme = toggleTheme == 1 ? 0 : 1;
-            localStorage.setItem('toggleTheme', toggleTheme);
-            setTheme();
-        });
-
-        let header = document.querySelector("nav");
-        let lastScrollValue = 0;
-
-        document.addEventListener('scroll', () => {
-            let top = document.documentElement.scrollTop;
-            if (lastScrollValue < top) {
-                header.classList.add("hidden");
-            } else {
-                header.classList.remove("hidden");
-            }
-            lastScrollValue = top;
-        });
-    </script>
+    <script src="./js/navbar.js"></script>
 </body>
 
 </html>
