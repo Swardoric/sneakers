@@ -17,6 +17,7 @@
 body {
     min-height: 100vh;
     overflow-x: hidden;
+    overflow-y: hidden;
     background: radial-gradient(ellipse, var(--background) 0%, #399DF5C6 40%, #399DF5 60%);
     color: var(--text);
     font-family: 'Poppins';
@@ -139,8 +140,7 @@ nav .logo:hover {
     top: 10%;
     left: 50%;
     transform: translateX(-50%);
-    width: 100%;
-
+    width: 100vw;
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
@@ -150,7 +150,6 @@ nav .logo:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-
     background: linear-gradient(180deg, #D2EAFF -5.59%, rgba(157, 201, 240, 0.1) 79.66%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -184,7 +183,7 @@ nav .logo:hover {
 
 .blurred-paires2 {
     position: absolute;
-    top: 100%;
+    top: 110%;
     left: 0;
     width: 50%;
     height: auto;
