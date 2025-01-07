@@ -127,7 +127,7 @@ nav .logo:hover{
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(-27deg);
     width: 60vw;
     height: auto;
 }
