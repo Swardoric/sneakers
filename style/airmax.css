@@ -1,20 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-@font-face {
-    font-family: 'MortalWave';
-    src: url('../font/mortalwave.woff');
+:root{
+    --navbar: #F8F9FACC;
+    --text: #0F0E17;
+    --background: #F8F9FA;
+    --btext: #D7D8E2;
+    --footer: #EAEAF3;
 }
 
-* {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
 }
 
-body {
-    padding: 0;
-    margin: 0;
+body{
+    overflow-x: hidden;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: 'Poppins';
+    display: flex;
+    flex-direction: column;
+    transition: background-color 0.2s ease, color 0.3s ease;
 }
 
-nav {
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav{
     position: fixed;
     top: 0;
     left: 0;
@@ -26,65 +42,65 @@ nav {
     transition: 0.2s ease;
 }
 
-nav:hover {
+nav:hover{
     background-color: var(--navbar);
 }
 
-.hidden {
-    top: -130px;
-    transition: all ease 0.5s;
-    transition-delay: 0.2s;
+.hidden{
+	top: -130px;
+	transition: all ease 0.5s;
+  	transition-delay: 0.2s;
 }
 
-.switch {
+.switch{
     cursor: pointer;
 }
 
-#theme {
+#theme{
     width: 20px;
     transition: transform 0.5s ease-out;
 }
 
-nav .logo {
+nav .logo{
     color: var(--text);
     font-size: 25px;
     padding: 5px;
     transition: 0.2s ease-out;
 }
 
-.nav-links ul li {
+.nav-links ul li{
     list-style: none;
     display: inline-block;
     padding: 8px 25px 8px 25px;
     transition: 0.2s ease-in-out;
 }
 
-.nav-links ul li a {
+.nav-links ul li a{
     color: var(--text);
     font-size: 15px;
     transition: 0.2s ease-in-out;
 }
 
-.nav-links ul li .switch {
+.nav-links ul li .switch{
     color: var(--text);
 }
 
-.nav-links ul li:hover {
+.nav-links ul li:hover{
     scale: 1.1;
     transform: translateY(-2px);
 }
 
-nav .logo:hover {
+nav .logo:hover{
     font-weight: bold;
     position: relative;
     color: transparent;
-    text-shadow:
+    text-shadow: 
         40px 0px 0 #399DF5,
         -20px -20px 0 #BE3F42,
         -5px 20px 0 #097042;
 }
 
-.nav-links ul li a::after {
+.nav-links ul li a::after{
     content: "";
     width: 0%;
     height: 2px;
@@ -93,50 +109,74 @@ nav .logo:hover {
     transition: 0.5s ease-in-out;
 }
 
-.nav-links ul li:nth-child(1) a::after {
+.nav-links ul li:nth-child(1) a::after{
     background-color: #399DF5;
 }
 
-.nav-links ul li:nth-child(2) a::after {
+.nav-links ul li:nth-child(2) a::after{
     background-color: #097042;
 }
 
-.nav-links ul li:nth-child(3) a::after {
+.nav-links ul li:nth-child(3) a::after{
     background-color: #BE3F42;
 }
 
-.nav-links ul li:nth-child(4) a::after {
+.nav-links ul li:nth-child(4) a::after{
     background-color: black;
 }
 
-.nav-links ul li a:hover::after {
+.nav-links ul li a:hover::after{
     width: 100%;
 }
 
-.section {
-    display: flex;
+.menuhamburger {
+    display: none;
 }
 
-#theme {
-    width: 2vh;
-    cursor: pointer;
-}
+@media (max-width: 1300px) {
+    nav .logo{
+        flex: 1;
+        text-align: center;
+    }
 
-#section1 {
-    height: 100vh;
-    width: 100hv;
-    background: radial-gradient(50% 50% at 50% 50%, #D8E4EF 0%, #399DF5 100%);
-}
+    .menuhamburger {
+        position: absolute;
+        display: block;
+        top: 25px;
+		right: 25px;
+        cursor: pointer;
+    }
 
-#section2 {
-    height: 100vh;
-    width: 100hv;
-    background: radial-gradient(50% 50% at 50% 50%, #E1E9F0 0%, #097042 100%);
-}
+    .nav-links{
+        top: 0;
+        left: 0;
+        margin-top: -200%;
+        position: absolute;
+        background-color: var(--navbar);
+        backdrop-filter: blur(7px);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.3s ease-out;
+    }
 
+    .nav-links.mobile-menu{
+        margin-top: 0;
+    }
 
-#section3 {
-    height: 100vh;
-    width: 100hv;
-    background: radial-gradient(50% 50% at 50% 50%, #D8E4EF 0%, #BE3F42 100%);
+    .nav-links ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links ul li{
+        margin: 25px 0;
+    }
+
+    .nav-links ul li a {
+        font-size: 1.5em;
+    }
 }

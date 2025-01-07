@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Lien vers le fichier CSS externe -->
-    <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="../style/airmax.css">
     <!-- Lien vers la feuille de style Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
@@ -18,103 +18,65 @@
 <body>
     <header>
         <nav>
-            <a class="logo" href="index.html">Sneakers</a>
+            <a class="logo" href="../index.html">Sneakers</a>
             <div class="nav-links">
                 <ul>
-                    <li><a href="#">Air Max</a></li>
+                    <li><a href="html/airmax.html">Air Max</a></li>
                     <li><a href="#">Stan Smith</a></li>
                     <li><a href="#">Jordan 1</a></li>
                     <li>
-                        <div class="switch"><img src="image/logo/lune.png" id="theme" alt="Changer le thème"></div>
+                        <div class="switch"><img src="../image/logo/lune.png" id="theme" alt="Changer le thème"></div>
                     </li>
                 </ul>
             </div>
+            <img class="menuhamburger" src="../image/logo/menuhamburger.png" alt="menu hamburger">
         </nav>
     </header>
+    <main>
+    </main>
+    <script>
+        const menuHamburger = document.querySelector(".menuhamburger")
+        const navLinks = document.querySelector(".nav-links")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        });
+        
 
-    <div class="container">
-        <!-- Section pour AIR MAX 1 -->
-        <section class="section" id="section1">
-            <h1 class="background-text">AIR MAX 1</h1>
-            <!-- Image de AIR MAX 1 -->
-            <img src="./images/airmax.png" alt="Photo de AIR MAX 1" id="shoe1">
-            <div class="description">
-                <h2>AIR MAX 1</h2>
-                <p>L'Air Max 1 est une icône intemporelle du design et de la mode. Créée en 1987 par Nike, cette sneaker
-                    est célèbre pour son unité Air visible dans la semelle, offrant confort et amorti. Elle associe
-                    style rétro et modernité, avec des couleurs épurées et un design qui s'adapte à toutes les tenues.
-                    La paire en bleu et blanc évoque une élégance fraîche et dynamique, idéale pour un look casual ou
-                    sportif.</p>
-            </div>
+        const switchThemeBtn = document.querySelector('.switch')
+        let toggleTheme = parseInt(localStorage.getItem('toggleTheme')) || 0;
+        var icon = document.getElementById('theme')
 
-            <div class="video-player">
-                <input type="button">
-                <img src="" alt="">
-                </input>
-            </div>
+        function setTheme() {
 
-            <nav class="navigation">
-                <div></div>
-                <div></div>
-                <div></div>
-            </nav>
-        </section>
+            if (toggleTheme === 1) {
+                document.documentElement.style.setProperty('--navbar', '#121212CC');
+                document.documentElement.style.setProperty('--text', '#FFFFFE');
+                document.documentElement.style.setProperty('--background', '#121212');
+                document.documentElement.style.setProperty('--btext', '#53545F');
+                document.documentElement.style.setProperty('--footer', '#16161A');
+                icon.src = "../image/logo/soleil.png";
+                theme.style.transform = 'rotate(360deg)';
 
-        <!-- Section pour STAN SMITH -->
-        <section class="section" id="section2">
-            <h1 class="background-text">AIR MAX 1</h1>
-            <!-- Image de STAN SMITH -->
-            <img src="./images/stanSmith" alt="Photo de STAN SMITH" class="">
-            <div class="description">
-                <h2>STAN SMITH</h2>
-                <p>La Stan Smith, emblématique d'Adidas, incarne simplicité et élégance intemporelle. Conçue à l'origine
-                    pour le tennis, cette sneaker a évolué pour devenir un classique de la mode décontractée. Sa
-                    silhouette minimaliste, avec son cuir blanc et ses accents verts distinctifs, offre un style épuré
-                    qui s'adapte à toutes les occasions.</p>
-            </div>
+            } else {
+                document.documentElement.style.setProperty('--navbar', '#F8F9FACC');
+                document.documentElement.style.setProperty('--text', '#0F0E17');
+                document.documentElement.style.setProperty('--background', '#F8F9FA');
+                document.documentElement.style.setProperty('--btext', '#D7D8E2');
+                document.documentElement.style.setProperty('--footer', '#EAEAF3');
+                icon.src = "../image/logo/lune.png";
+                theme.style.transform = 'rotate(0deg)';
 
+            }
+        }
 
-            <div class="video-player">
-                <input type="button">
-                <img src="" alt="">
-                </input>
-            </div>
-
-            <nav class="navigation">
-                <div></div>
-                <div></div>
-                <div></div>
-            </nav>
-        </section>
-
-        <!-- Section pour AIR JORDAN 1 -->
-        <section class="section" id="section3">
-            <h1 class="background-text">JORDAN 1</h1>
-            <!-- Image de AIR JORDAN 1 (actuellement utilisant l'image de STAN SMITH) -->
-            <img src="./images/stanSmith" alt="Photo de STAN SMITH" class="">
-            <div class="description">
-                <h2>AIR JORDAN 1</h2>
-                <p>La Air Jordan 1, lancée en 1985, est une légende dans l'univers des sneakers et du basketball.
-                    Première chaussure signature de Michael Jordan, elle a marqué l'histoire avec son design audacieux
-                    et son association à la culture urbaine. Avec son mélange de cuir de qualité, de couleurs iconiques,
-                    et de confort, la Air Jordan 1 transcende le sport pour devenir une icône de la mode. Idéale pour
-                    les amateurs de streetwear, elle offre un style unique et intemporel qui ne cesse de se réinventer.
-                </p>
-            </div>
-
-            <div class="video-player">
-                <input type="button">
-                <img src="" alt="">
-                </input>
-            </div>
-
-            <nav class="navigation">
-                <div></div>
-                <div></div>
-                <div></div>
-            </nav>
-        </section>
-    </div>
+        setTheme();
+        switchThemeBtn.addEventListener('click', () => {
+            toggleTheme = toggleTheme == 1 ? 0 : 1;
+            localStorage.setItem('toggleTheme', toggleTheme);
+            setTheme();
+        });
+    </script>
 </body>
 
 </html>
