@@ -243,8 +243,6 @@ nav .logo:hover{
     display: none; 
 }
 
-
-
 @media (max-width: 800px) {
     nav .logo{
         flex: 1;

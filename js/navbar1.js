@@ -59,3 +59,10 @@ const description = document.querySelector(".description")
 descriptionbtn.addEventListener('click', () => {
     description.classList.toggle('mobile')
 });
+
+const videobtn = document.querySelector(".paireprincipale")
+const video = document.querySelector(".video")
+
+videobtn.addEventListener('click', () => {
+    video.classList.toggle('show')
+});
