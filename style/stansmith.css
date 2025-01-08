@@ -309,43 +309,43 @@ nav .logo:hover{
 
     .blurred-paires1 {
         position: absolute;
-        top: 10%;
-        left: 0;
-        width: 40%;
+        top: 30%;
+        left: -100%;
+        width: 70%;
         height: auto;
-        filter: blur(7.7px);
-        transform: scaleX(-1) translate(50%, -50%) rotate(18deg);
+        filter: blur(4.7px);
+        transform: translate(50%, -50%) rotate(-18deg);
     }
     
     .blurred-paires2 {
         position: absolute;
         top: 70%;
-        left: 0%;
+        right: 100%;
         width: 40%;
         height: auto;
         filter: blur(7.7px);
-        transform: scaleX(-1) translate(50%, -50%) rotate(15deg);
+        transform: scaleX(-1) scaleX(-1) translate(50%, -50%) rotate(-15deg);
     }
     
     .blurred-paires3 {
         position: absolute;
         top: 80%;
-        left: 40%;
+        left: 120%;
         width: 80%;
         height: auto;
         filter: blur(10px);
-        transform: translate(50%, -50%) rotate(15deg);
+        transform: scaleX(-1) translate(50%, -50%) rotate(-15deg);
     }
 
     .blurred-paires4{
         position: absolute;
         display: block;
         top: 20%;
-        left: 60%;
-        width: 60%;
+        left: 95%;
+        width: 40%;
         height: auto;
         filter: blur(10px);
-        transform: translate(50%, -50%) rotate(-15deg);
+        transform: scaleX(-1) translate(50%, -50%) rotate(15deg);
     }
 
     .description h2 {
