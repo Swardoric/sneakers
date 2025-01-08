@@ -201,6 +201,11 @@ nav .logo:hover{
     transform: translate(50%, -50%) rotate(25deg);
 }
 
+.blurred-paires4{
+    display: none;
+}
+
+
 .description h2 {
     font-family: 'Poppins';
     font-style: normal;
@@ -216,7 +221,7 @@ nav .logo:hover{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: calc(0.7vw + 5px);
     line-height: 1.5;
     color: #FFFFFF;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
@@ -232,6 +237,10 @@ nav .logo:hover{
     background: rgba(0, 0, 0, 0.1);
     color: white;
     padding: 20px;
+}
+
+.fleche{
+    display: none; 
 }
 
 @media (max-width: 1300px) {
@@ -279,5 +288,121 @@ nav .logo:hover{
 
     .nav-links ul li a {
         font-size: 1.5em;
+    }
+
+    .nomPaire {
+        top: 30%;
+    }
+
+    .background-paires {
+        z-index: -2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0%;
+        margin: 0%;
+        width: 60vw;
+        height: auto;
+        aspect-ratio: 1/2;
+    }
+
+    .blurred-paires1 {
+        position: absolute;
+        top: 10%;
+        left: 0;
+        width: 40%;
+        height: auto;
+        filter: blur(7.7px);
+        transform: scaleX(-1) translate(50%, -50%) rotate(18deg);
+    }
+    
+    .blurred-paires2 {
+        position: absolute;
+        top: 70%;
+        left: 0%;
+        width: 40%;
+        height: auto;
+        filter: blur(7.7px);
+        transform: scaleX(-1) translate(50%, -50%) rotate(15deg);
+    }
+    
+    .blurred-paires3 {
+        position: absolute;
+        top: 80%;
+        left: 40%;
+        width: 80%;
+        height: auto;
+        filter: blur(10px);
+        transform: translate(50%, -50%) rotate(15deg);
+    }
+
+    .blurred-paires4{
+        position: absolute;
+        display: block;
+        top: 20%;
+        left: 60%;
+        width: 60%;
+        height: auto;
+        filter: blur(10px);
+        transform: translate(50%, -50%) rotate(-15deg);
+    }
+
+    .description h2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 6vw;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+    
+    .description p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(1vw + 5px);
+        line-height: 1.5;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 20px;
+    }
+    
+    .description {
+        position: absolute;
+        width: 70%;
+        height: 30%;
+        right: -70%;
+        top: 60%;
+        background: rgba(0, 0, 0, 0.1);
+        color: white;
+        padding: 20px;
+        transition: 0.3s ease-out;
+    }
+
+    .description-btn{
+        position: absolute;
+        width: 5vw;
+        height: 20vw;
+        left: -7%;
+        top: 25%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .description.mobile{
+        right: 0%;
+    } 
+
+    .fleche{
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        display: block;
+        width: 70%;
+        transform: scaleX(-1);
     }
 }
