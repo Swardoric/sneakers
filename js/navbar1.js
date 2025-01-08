@@ -66,7 +66,11 @@ descriptionbtn.addEventListener('click', () => {
 
 const videobtn = document.querySelector(".paireprincipale")
 const video = document.querySelector(".video")
+const videobtnout = document.querySelector(".videobtn")
 
 videobtn.addEventListener('click', () => {
     video.classList.toggle('show')
+});
+videobtnout.addEventListener('click', () => {
+    video.classList.remove('show')
 });
