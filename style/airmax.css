@@ -14,6 +14,28 @@
     text-decoration: none;
 }
 
+.dark {
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    z-index: -10;
+    flex-direction: column;
+    transition: background-color 0.2s ease, color 0.3s ease;
+}
+
+.light {
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    z-index: -10;
+    flex-direction: column;
+    transition: background-color 0.2s ease, color 0.3s ease;
+}
+
 body {
     min-height: 100vh;
     overflow-x: hidden;
@@ -200,7 +222,7 @@ nav .logo:hover {
     transform: translate(50%, -50%) rotate(25deg);
 }
 
-.blurred-paires4{
+.blurred-paires4 {
     display: none;
 }
 
@@ -237,8 +259,8 @@ nav .logo:hover {
     padding: 20px;
 }
 
-.fleche{
-       display: none; 
+.fleche {
+    display: none;
 }
 
 @media (max-width: 800px) {
@@ -314,7 +336,7 @@ nav .logo:hover {
         filter: blur(7.7px);
         transform: scaleX(-1) translate(50%, -50%) rotate(18deg);
     }
-    
+
     .blurred-paires2 {
         position: absolute;
         top: 70%;
@@ -324,7 +346,7 @@ nav .logo:hover {
         filter: blur(7.7px);
         transform: scaleX(-1) translate(50%, -50%) rotate(15deg);
     }
-    
+
     .blurred-paires3 {
         position: absolute;
         top: 80%;
@@ -335,7 +357,7 @@ nav .logo:hover {
         transform: translate(50%, -50%) rotate(15deg);
     }
 
-    .blurred-paires4{
+    .blurred-paires4 {
         position: absolute;
         display: block;
         top: 20%;
@@ -356,7 +378,7 @@ nav .logo:hover {
         color: #FFFFFF;
         padding-bottom: 20px;
     }
-    
+
     .description p {
         font-family: 'Poppins';
         font-style: normal;
@@ -367,7 +389,7 @@ nav .logo:hover {
         text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
         margin-bottom: 20px;
     }
-    
+
     .description {
         position: absolute;
         width: 70%;
@@ -380,7 +402,7 @@ nav .logo:hover {
         transition: 0.3s ease-out;
     }
 
-    .description-btn{
+    .description-btn {
         position: absolute;
         width: 5vw;
         height: 20vw;
@@ -391,11 +413,11 @@ nav .logo:hover {
         background-color: rgba(0, 0, 0, 0.1);
     }
 
-    .description.mobile{
+    .description.mobile {
         right: 0%;
-    } 
+    }
 
-    .fleche{
+    .fleche {
         position: absolute;
         top: 40%;
         left: 15%;

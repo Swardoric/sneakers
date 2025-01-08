@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-:root{
+:root {
     --navbar: #F8F9FACC;
     --text: #0F0E17;
     --background: #F8F9FA;
@@ -8,18 +8,40 @@
     --footer: #EAEAF3;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-body{
+.dark {
+    background-color: rgba(0, 0, 0, 0.8);
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    z-index: -10;
+    flex-direction: column;
+    transition: background-color 0.2s ease, color 0.3s ease;
+}
+
+.light {
+    background-color: rgba(0, 0, 0, 0);
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    z-index: -10;
+    flex-direction: column;
+    transition: background-color 0.2s ease, color 0.3s ease;
+}
+
+body {
     overflow-x: hidden;
     overflow-y: hidden;
     min-height: 100vh;
-    background: radial-gradient(ellipse, var(--background) 0%, #BE3F42C6 40% , #BE3F42 60%);
+    background: radial-gradient(ellipse, var(--background) 0%, #BE3F42C6 40%, #BE3F42 60%);
     color: var(--text);
     font-family: 'Poppins';
     display: flex;
@@ -32,7 +54,7 @@ a {
     text-decoration: none;
 }
 
-nav{
+nav {
     position: fixed;
     top: 0;
     left: 0;
@@ -44,55 +66,55 @@ nav{
     transition: 0.2s ease;
 }
 
-.switch{
+.switch {
     cursor: pointer;
 }
 
-#theme{
+#theme {
     width: 20px;
     transition: transform 0.5s ease-out;
 }
 
-nav .logo{
+nav .logo {
     color: var(--text);
     font-size: 25px;
     padding: 5px;
     transition: 0.2s ease-out;
 }
 
-.nav-links ul li{
+.nav-links ul li {
     list-style: none;
     display: inline-block;
     padding: 8px 25px 8px 25px;
     transition: 0.2s ease-in-out;
 }
 
-.nav-links ul li a{
+.nav-links ul li a {
     color: var(--text);
     font-size: 15px;
     transition: 0.2s ease-in-out;
 }
 
-.nav-links ul li .switch{
+.nav-links ul li .switch {
     color: var(--text);
 }
 
-.nav-links ul li:hover{
+.nav-links ul li:hover {
     scale: 1.1;
     transform: translateY(-2px);
 }
 
-nav .logo:hover{
+nav .logo:hover {
     font-weight: bold;
     position: relative;
     color: transparent;
-    text-shadow: 
+    text-shadow:
         40px 0px 0 #399DF5,
         -20px -20px 0 #BE3F42,
         -5px 20px 0 #097042;
 }
 
-.nav-links ul li a::after{
+.nav-links ul li a::after {
     content: "";
     width: 0%;
     height: 2px;
@@ -101,23 +123,23 @@ nav .logo:hover{
     transition: 0.5s ease-in-out;
 }
 
-.nav-links ul li:nth-child(1) a::after{
+.nav-links ul li:nth-child(1) a::after {
     background-color: #399DF5;
 }
 
-.nav-links ul li:nth-child(2) a::after{
+.nav-links ul li:nth-child(2) a::after {
     background-color: #097042;
 }
 
-.nav-links ul li:nth-child(3) a::after{
+.nav-links ul li:nth-child(3) a::after {
     background-color: #BE3F42;
 }
 
-.nav-links ul li:nth-child(4) a::after{
+.nav-links ul li:nth-child(4) a::after {
     background-color: black;
 }
 
-.nav-links ul li a:hover::after{
+.nav-links ul li a:hover::after {
     width: 100%;
 }
 
@@ -201,7 +223,7 @@ nav .logo:hover{
     transform: translate(50%, -50%) rotate(25deg);
 }
 
-.blurred-paires4{
+.blurred-paires4 {
     display: none;
 }
 
@@ -239,12 +261,12 @@ nav .logo:hover{
     padding: 20px;
 }
 
-.fleche{
-    display: none; 
+.fleche {
+    display: none;
 }
 
 @media (max-width: 800px) {
-    nav .logo{
+    nav .logo {
         flex: 1;
         text-align: center;
     }
@@ -253,11 +275,11 @@ nav .logo:hover{
         position: absolute;
         display: block;
         top: 25px;
-		right: 25px;
+        right: 25px;
         cursor: pointer;
     }
 
-    .nav-links{
+    .nav-links {
         top: 0;
         left: 0;
         margin-top: -200%;
@@ -272,17 +294,17 @@ nav .logo:hover{
         transition: 0.3s ease-out;
     }
 
-    .nav-links.mobile-menu{
+    .nav-links.mobile-menu {
         margin-top: 0;
     }
 
-    .nav-links ul{
+    .nav-links ul {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .nav-links ul li{
+    .nav-links ul li {
         margin: 25px 0;
     }
 
@@ -316,7 +338,7 @@ nav .logo:hover{
         filter: blur(7.7px);
         transform: scaleX(-1) translate(50%, -50%) rotate(18deg);
     }
-    
+
     .blurred-paires2 {
         position: absolute;
         top: 70%;
@@ -326,7 +348,7 @@ nav .logo:hover{
         filter: blur(7.7px);
         transform: scaleX(-1) translate(50%, -50%) rotate(15deg);
     }
-    
+
     .blurred-paires3 {
         position: absolute;
         top: 80%;
@@ -337,7 +359,7 @@ nav .logo:hover{
         transform: translate(50%, -50%) rotate(15deg);
     }
 
-    .blurred-paires4{
+    .blurred-paires4 {
         position: absolute;
         display: block;
         top: 20%;
@@ -358,7 +380,7 @@ nav .logo:hover{
         color: #FFFFFF;
         padding-bottom: 20px;
     }
-    
+
     .description p {
         font-family: 'Poppins';
         font-style: normal;
@@ -369,7 +391,7 @@ nav .logo:hover{
         text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
         margin-bottom: 20px;
     }
-    
+
     .description {
         position: absolute;
         width: 70%;
@@ -382,7 +404,7 @@ nav .logo:hover{
         transition: 0.3s ease-out;
     }
 
-    .description-btn{
+    .description-btn {
         position: absolute;
         width: 5vw;
         height: 20vw;
@@ -393,11 +415,11 @@ nav .logo:hover{
         background-color: rgba(0, 0, 0, 0.1);
     }
 
-    .description.mobile{
+    .description.mobile {
         right: 0%;
-    } 
+    }
 
-    .fleche{
+    .fleche {
         position: absolute;
         top: 40%;
         left: 15%;
