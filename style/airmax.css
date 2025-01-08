@@ -44,7 +44,7 @@ body {
     min-height: 100vh;
     overflow-x: hidden;
     overflow-y: hidden;
-    background: radial-gradient(ellipse, var(--background) 0%, #399DF5C6 40%, #399DF5 60%);
+    background: radial-gradient(ellipse, #FFFFFE 0%, #399DF5C6 40%, #399DF5 60%);
     color: var(--text);
     font-family: 'Poppins';
     display: flex;
