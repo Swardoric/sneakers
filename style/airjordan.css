@@ -465,7 +465,7 @@ nav .logo:hover {
         transform: scaleX(-1);
     }
 
-    .video{
+    .video {
         display: none;
     }
 }

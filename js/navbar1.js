@@ -72,5 +72,5 @@ videobtn.addEventListener('click', () => {
     video.classList.toggle('show')
 });
 videobtnout.addEventListener('click', () => {
-    video.classList.remove('show')
+    video.classList.toggle('show')
 });
