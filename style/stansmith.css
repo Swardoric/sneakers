@@ -269,6 +269,21 @@ nav .logo:hover {
     display: none;
 }
 
+.video {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
 @media (max-width: 800px) {
     nav .logo {
         flex: 1;
@@ -433,6 +448,5 @@ nav .logo:hover {
 
     .video {
         display: none;
-
     }
 }
