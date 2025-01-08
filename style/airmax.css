@@ -284,6 +284,51 @@ nav .logo:hover {
         font-size: 1.5em;
     }
 
+    .background-paires {
+        z-index: -2;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0%;
+        margin: 0%;
+        width: 60vw;
+        height: auto;
+        aspect-ratio: 1/2;
+        background-color: #097042;
+    }
+    
+    
+    .blurred-paires1 {
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        width: 20%;
+        height: auto;
+        filter: blur(13.7px);
+        transform: scaleX(-1) translate(50%, -50%) rotate(18deg);
+    }
+    
+    .blurred-paires2 {
+        position: absolute;
+        top: 110%;
+        left: 0;
+        width: 50%;
+        height: auto;
+        filter: blur(7.7px);
+        transform: scaleX(-1) translate(50%, -50%) rotate(15deg);
+    }
+    
+    .blurred-paires3 {
+        position: absolute;
+        top: 60%;
+        right: 0;
+        width: 30%;
+        height: auto;
+        filter: blur(10px);
+        transform: translate(50%, -50%) rotate(25deg);
+    }
+
     .description h2 {
         font-family: 'Poppins';
         font-style: normal;
