@@ -210,7 +210,7 @@ nav .logo:hover{
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
-    font-size: 48px;
+    font-size: calc(0.8vw + 38px);
     display: flex;
     align-items: center;
     color: #FFFFFF;
@@ -242,6 +242,8 @@ nav .logo:hover{
 .fleche{
     display: none; 
 }
+
+
 
 @media (max-width: 800px) {
     nav .logo{
@@ -403,5 +405,9 @@ nav .logo:hover{
         left: 15%;
         display: block;
         width: 70%;
+    }
+
+    .video{
+        display: none;
     }
 }
