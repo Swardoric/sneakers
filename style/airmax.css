@@ -215,7 +215,7 @@ nav .logo:hover {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: calc(0.7vw + 5px);
     line-height: 1.5;
     color: #FFFFFF;
     text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
@@ -233,7 +233,11 @@ nav .logo:hover {
     padding: 20px;
 }
 
-@media (max-width: 1300px) {
+.fleche{
+       display: none; 
+}
+
+@media (max-width: 800px) {
     nav .logo {
         flex: 1;
         text-align: center;
@@ -279,4 +283,63 @@ nav .logo:hover {
     .nav-links ul li a {
         font-size: 1.5em;
     }
+
+    .description h2 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 48px;
+        display: flex;
+        align-items: center;
+        color: #FFFFFF;
+        padding-bottom: 20px;
+    }
+    
+    .description p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        font-size: calc(1vw + 5px);
+        line-height: 1.5;
+        color: #FFFFFF;
+        text-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+        margin-bottom: 20px;
+    }
+    
+    .description {
+        position: absolute;
+        width: 70%;
+        height: 30%;
+        right: -70%;
+        top: 60%;
+        background: rgba(0, 0, 0, 0.1);
+        color: white;
+        padding: 20px;
+        transition: 0.3s ease-out;
+    }
+
+    .description-btn{
+        position: absolute;
+        width: 7%;
+        height: 50%;
+        left: -7%;
+        top: 25%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .description.mobile{
+        right: 0%;
+    } 
+
+    .fleche{
+        position: absolute;
+        top: 40%;
+        left: 15%;
+        display: block;
+        width: 70%;
+        transform: scaleX(-1);
+    }
+
 }

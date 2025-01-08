@@ -52,3 +52,10 @@ document.addEventListener('scroll', () => {
     }
     lastScrollValue = top;
 });
+
+const descriptionbtn = document.querySelector(".description-btn")
+const description = document.querySelector(".description")
+
+descriptionbtn.addEventListener('click', () => {
+    description.classList.toggle('mobile')
+});
