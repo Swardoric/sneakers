@@ -382,8 +382,8 @@ nav .logo:hover {
 
     .description-btn{
         position: absolute;
-        width: 7%;
-        height: 50%;
+        width: 5vw;
+        height: 20vw;
         left: -7%;
         top: 25%;
         border-top-left-radius: 10px;
