@@ -278,17 +278,17 @@ nav .logo:hover {
     transition: 0.5s ease-in-out;
 }
 
-.video iframe{
+.video iframe {
     position: absolute;
     width: 100%;
     height: 100%;
 }
 
-.video.show{
+.video.show {
     margin-top: 0;
 }
 
-.videobtn{
+.videobtn {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -463,7 +463,7 @@ nav .logo:hover {
         transform: scaleX(-1);
     }
 
-    .video{
+    .video {
         display: none;
     }
 
